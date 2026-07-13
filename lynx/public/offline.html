@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>lynx — offline</title>
+    <style>
+      :root { color-scheme: light dark; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        display: grid;
+        place-items: center;
+        background: #f6f1e7;
+        color: #2c2722;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        text-align: center;
+        padding: 24px;
+      }
+      .mark {
+        display: inline-grid;
+        place-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: #e8772e;
+        color: #fff;
+        font-weight: 800;
+        font-size: 28px;
+        margin-bottom: 18px;
+      }
+      h1 { font-size: 1.4rem; margin: 0 0 8px; }
+      p { color: #6f6657; margin: 0 0 20px; max-width: 22rem; }
+      button {
+        border: 1px solid #d3c6aa;
+        background: #efe7d4;
+        color: #2c2722;
+        padding: 10px 18px;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+      @media (prefers-color-scheme: dark) {
+        body { background: #151412; color: #ece7df; }
+        p { color: #a39c90; }
+        button { background: #2b2825; color: #ece7df; border-color: #3c3733; }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="mark">l</div>
+      <h1>You're offline</h1>
+      <p>lynx needs a connection to load your notes. Reconnect and try again.</p>
+      <button onclick="location.reload()">Retry</button>
+    </div>
+  </body>
+</html>

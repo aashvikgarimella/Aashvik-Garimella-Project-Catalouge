@@ -1,0 +1,30 @@
+# secrets
+.env
+.env.local
+.env*.local
+LynxApp/App/Secrets.swift
+video-llm-wrapper/.env
+
+# deps
+node_modules/
+video-llm-wrapper/.venv/
+.venv/
+
+# build output
+.next/
+out/
+build/
+LynxApp/build/
+dist/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+
+# supabase
+supabase/.temp/
+
+# misc
+.DS_Store
+*.log
+__pycache__/
+*.pyc

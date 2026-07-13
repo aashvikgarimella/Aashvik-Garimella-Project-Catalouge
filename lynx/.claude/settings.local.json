@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/aashvikgarimella/.claude/plugins/**)",
+      "Bash(pdfinfo \"the big site.pdf\")",
+      "Bash(mdls -name kMDItemNumberOfPages \"the big site.pdf\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf available'\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(brew install *)"
+    ]
+  }
+}
